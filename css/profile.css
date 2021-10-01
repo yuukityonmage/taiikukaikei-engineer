@@ -1,0 +1,397 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    letter-spacing: .05em;
+    color: black;
+    font-family: "源の角ゴシックJP", "HGP行書体";
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6rem;
+}
+.inner-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10rem;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+h2{
+    font-size: 5rem;
+    margin:70px 0 0;
+}
+h3{
+    font-size: 2.5rem;
+    margin: 0 0 16px;
+    text-align: center;
+}
+p{
+    font-size: 1.4rem;
+    font-family: "源の角ゴシックJP";
+}
+
+
+/*header*/
+.header{
+    padding: 1.9rem 3rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.header-logo{
+    width: 150px;
+}
+.header-inner{
+    margin: 20px 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header.fixed{
+    position: fixed;
+    background-color: #282f35;
+    padding: 3rem;
+    width: 100%;
+    transition: .3s;
+}
+.header a{
+    font-size: 2.5rem;
+    color: #000;;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    transition: .3s;
+}
+.header a:hover{
+    opacity: .7;
+    transition: .3s;
+}
+.header-nav ul{
+    display: flex;
+    list-style: none;
+}
+.header-nav li{
+    padding:0 1.5rem;
+}
+.burger-btn{
+    display: none;
+}
+/*ハンバーガーメニュー*/
+.burger-btn.cross .bar-top{
+    transform: rotate(45deg) translate(8px, 8px);
+    transition:.3s;
+}
+.burger-btn.cross .bar-mid{
+    opacity: 0;
+    transition: .3s;
+}
+.burger-btn.cross .bar-bottom{
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+} 
+body.noscroll{
+    overflow: hidden;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+/*profile*/
+.zikosyoukai{
+    display: flex;
+}
+.zikosyoukai-img{
+    width: 40%;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+/*正方形にできない*/
+.zikosyoukai-img img{
+    display: block;
+    width: 100%;
+    height: 400px;
+    /*padding-bottom: 100%;*/
+    border-radius: 8rem;
+}
+.zikosyoukai-bun{
+    width: 50%;
+    margin: 10rem auto;
+    font-size: 2.4rem;
+    padding: 3rem;
+}
+
+/*mokuhyou*/
+.mokuhyou-culumn{
+    display: flex;
+}
+.mokuhyou-bun{
+    width: 60%;
+}
+.mokuhyou-img{
+    width: 35%;
+}
+.mokuhyou h3{
+    text-align: center;
+}
+.mokuhyou-p{
+    margin-top: 5rem;
+}
+
+/*strength*/
+.strength h3{
+    text-align: center;
+}
+.strength-culumn{
+    display: flex;
+    justify-content: center;
+}
+.strength-item{
+    width: 32%;
+    padding: 10px;
+}
+.strength h4{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    font-family: "源の角ゴシックJP";
+}
+
+/*footer*/
+footer p{
+    text-align: center;
+    margin: 3rem auto;
+}
+
+/*タブレット*/
+@media (max-width:1020px) and (min-width:768px){
+     /*header*/
+    .header{
+        padding: 3rem 4vw 3rem;
+    }
+    .header-logo{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .header h1{
+        display: none;
+    }
+    .header-inner{
+        padding:0;
+    }
+    .header-nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#ffffff;
+    }
+    .header-nav ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav li{
+        margin: 0 0 3rem;    
+    }
+    .header.fixed{
+        display: none;
+    }
+    /*ハンバーガーメニュー*/
+    .burger-btn{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 4vw;
+        
+    }
+    .burger-btn .bar{
+        display: block;
+        height: 3px;
+        width: 3rem;
+        background-color:#000;
+    }
+    .bar-top{
+        margin-bottom: 8px;
+    }
+    .bar-mid{
+        margin-bottom: 8px;
+    }
+    .burger-btn.cross .bar-top{
+        transform: rotate(45deg) translate(8px, 8px);
+        transition:.3s;
+    }
+    .burger-btn.cross .bar-mid{
+        opacity: 0;
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-bottom{
+        transform: rotate(-45deg) translate(8px,-8px);
+        transition: .3s;
+    } 
+    body.noscroll{
+        overflow: hidden;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+}
+
+/*スマートフォン*/
+@media screen and (max-width:768px){
+    .inner-wrapper{
+        padding: 1rem;
+        margin-top: 30px;
+    }
+    h2{
+       margin-bottom: 10px; 
+    }
+    p{
+        padding: 1rem;
+    }
+    /*header*/
+    .header{
+        padding: 3rem 4vw 3rem;
+    }
+    .header-logo{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .header h1{
+        display: none;
+    }
+    .header-inner{
+        padding:0;
+    }
+    .header-nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#ffffff;
+    }
+    .header-nav ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav li{
+        margin: 0 0 3rem;    
+    }
+    .header.fixed{
+        display: none;
+    }
+    /*ハンバーガーメニュー*/
+    .burger-btn{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 4vw;
+    }
+    .burger-btn .bar{
+        display: block;
+        height: 3px;
+        width: 3rem;
+        background-color: rgb(0, 0, 0);
+    }
+    .bar-top{
+        margin-bottom: 8px;
+    }
+    .bar-mid{
+        margin-bottom: 8px;
+    }
+    .burger-btn.cross .bar-top{
+        transform: rotate(45deg) translate(8px, 8px);
+        transition:.3s;
+    }
+    .burger-btn.cross .bar-mid{
+        opacity: 0;
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-bottom{
+        transform: rotate(-45deg) translate(8px,-8px);
+        transition: .3s;
+    } 
+    body.noscroll{
+        overflow: hidden;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+    /*profile*/
+    .zikosyoukai{
+        flex-direction: column;
+        text-align: center;
+    }
+    .zikosyoukai-img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .zikosyoukai-img img{
+        height: 300px;
+    }
+    .zikosyoukai-bun{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+    }
+
+    /*mokuhyou*/
+    .mokuhyou-culumn{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .mokuhyou-bun{
+        width: 100%;
+    }
+    .mokuhyou-img{
+        width: 100%;
+    }
+
+    /*strength*/
+    
+    .strength-culumn{
+        flex-direction: column;
+    }
+    .strength-item{
+        width: 100%;
+    }
+    .strength h4{
+        font-size: 1.8rem;
+    }
+}
