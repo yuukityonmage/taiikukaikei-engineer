@@ -136,7 +136,8 @@ p{
     transition: all 3s;
     background-image: url(../img/pinterest_board_photo.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-color:black;
     position: fixed;
     top: 0;
     left: 0;
