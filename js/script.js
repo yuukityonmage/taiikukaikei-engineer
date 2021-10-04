@@ -45,7 +45,7 @@ $(function(){
 		$('.burger-btn').removeClass('cross');
 	})
 });
-});
+
 
 // ローディング用のJS
 {
