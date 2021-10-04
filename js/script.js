@@ -38,6 +38,13 @@ $(function(){
 	  $('.burger-btn').toggleClass('cross');
 	  $('body').toggleClass('noscroll');
 	});
+	
+	$('.header-nav a').on("click",function(){
+		$('body').removeClass('noscroll');
+		$('.header-nav').fadeOut(300);
+		$('.burger-btn').removeClass('cross');
+	})
+});
 });
 
 // ローディング用のJS
